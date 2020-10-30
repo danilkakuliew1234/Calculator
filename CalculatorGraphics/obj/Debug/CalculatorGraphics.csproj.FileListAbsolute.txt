@@ -10,3 +10,5 @@ C:\Users\danya\Desktop\Calc\CalculatorGraphics\obj\Debug\CalculatorGraphics.cspr
 C:\Users\danya\Desktop\Calc\CalculatorGraphics\obj\Debug\CalculatorGraphics.csproj.CopyComplete
 C:\Users\danya\Desktop\Calc\CalculatorGraphics\obj\Debug\CalculatorGraphics.exe
 C:\Users\danya\Desktop\Calc\CalculatorGraphics\obj\Debug\CalculatorGraphics.pdb
+C:\Users\danya\Desktop\Calc\CalculatorGraphics\bin\Debug\Calc.dll
+C:\Users\danya\Desktop\Calc\CalculatorGraphics\bin\Debug\Calc.pdb

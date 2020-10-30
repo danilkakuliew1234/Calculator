@@ -1,0 +1,5 @@
+C:\Users\danya\Desktop\Calc\Calc\bin\Debug\Calc.dll
+C:\Users\danya\Desktop\Calc\Calc\bin\Debug\Calc.pdb
+C:\Users\danya\Desktop\Calc\Calc\obj\Debug\Calc.csproj.CoreCompileInputs.cache
+C:\Users\danya\Desktop\Calc\Calc\obj\Debug\Calc.dll
+C:\Users\danya\Desktop\Calc\Calc\obj\Debug\Calc.pdb
