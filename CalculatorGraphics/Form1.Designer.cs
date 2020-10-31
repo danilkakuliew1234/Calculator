@@ -97,8 +97,9 @@
             this.NumberText.ForeColor = System.Drawing.Color.White;
             this.NumberText.Location = new System.Drawing.Point(3, 67);
             this.NumberText.Name = "NumberText";
-            this.NumberText.Size = new System.Drawing.Size(0, 38);
+            this.NumberText.Size = new System.Drawing.Size(33, 38);
             this.NumberText.TabIndex = 2;
+            this.NumberText.Text = "0";
             // 
             // minus
             // 
@@ -176,6 +177,7 @@
             this.multiply.Size = new System.Drawing.Size(85, 86);
             this.multiply.TabIndex = 12;
             this.multiply.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.multiply.Click += new System.EventHandler(this.multiply_Click);
             // 
             // divide
             // 
@@ -201,6 +203,7 @@
             this.divide.Size = new System.Drawing.Size(85, 86);
             this.divide.TabIndex = 11;
             this.divide.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // Equally
             // 
