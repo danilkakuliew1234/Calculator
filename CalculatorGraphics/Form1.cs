@@ -68,64 +68,61 @@ namespace CalculatorGraphics
             {
                 NumberText.Text = null;
                 NumberText.Text += ButtonText;
-            } else
+            }
+            else
                 NumberText.Text += ButtonText;
         }
-
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            NumberText.Text = "0";
+            sum = 0;
+        }
         private void one_Click(object sender, EventArgs e)
         {
             numberone += one.ButtonText;
             CheckNumberTextOnNull(one.ButtonText);
         }
-
         private void two_Click(object sender, EventArgs e)
         {
             numberone += two.ButtonText;
             CheckNumberTextOnNull(two.ButtonText);
         }
-
         private void three_Click(object sender, EventArgs e)
         {
             numberone += three.ButtonText;
             CheckNumberTextOnNull(three.ButtonText);
         }
-
         private void four_Click(object sender, EventArgs e)
         {
             numberone += four.ButtonText;
             CheckNumberTextOnNull(four.ButtonText);
         }
-
         private void five_Click(object sender, EventArgs e)
         {
             numberone += five.ButtonText;
+            
             CheckNumberTextOnNull(five.ButtonText);
         }
-
         private void six_Click(object sender, EventArgs e)
         {
             numberone += six.ButtonText;
             CheckNumberTextOnNull(six.ButtonText);
         }
-
         private void seven_Click(object sender, EventArgs e)
         {
             numberone += seven.ButtonText;
             CheckNumberTextOnNull(seven.ButtonText);
         }
-
         private void eath_Click(object sender, EventArgs e)
         {
             numberone += eath.ButtonText;
             CheckNumberTextOnNull(eath.ButtonText);
         }
-
         private void nine_Click(object sender, EventArgs e)
         {
             numberone += nine.ButtonText;
             CheckNumberTextOnNull(nine.ButtonText);
         }
-
         private void zero_Click(object sender, EventArgs e)
         {
             numberone += zero.ButtonText;

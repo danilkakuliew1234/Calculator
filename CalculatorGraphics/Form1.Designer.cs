@@ -47,6 +47,7 @@
             this.three = new Bunifu.Framework.UI.BunifuThinButton2();
             this.two = new Bunifu.Framework.UI.BunifuThinButton2();
             this.one = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.Clear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,6 +55,7 @@
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.Clear);
             this.bunifuGradientPanel1.Controls.Add(this.panel1);
             this.bunifuGradientPanel1.Controls.Add(this.NumberText);
             this.bunifuGradientPanel1.Controls.Add(this.minus);
@@ -171,7 +173,7 @@
             this.multiply.IdleFillColor = System.Drawing.Color.Transparent;
             this.multiply.IdleForecolor = System.Drawing.Color.White;
             this.multiply.IdleLineColor = System.Drawing.Color.White;
-            this.multiply.Location = new System.Drawing.Point(290, 411);
+            this.multiply.Location = new System.Drawing.Point(290, 315);
             this.multiply.Margin = new System.Windows.Forms.Padding(5);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(85, 86);
@@ -226,7 +228,7 @@
             this.Equally.Location = new System.Drawing.Point(195, 315);
             this.Equally.Margin = new System.Windows.Forms.Padding(5);
             this.Equally.Name = "Equally";
-            this.Equally.Size = new System.Drawing.Size(180, 86);
+            this.Equally.Size = new System.Drawing.Size(85, 86);
             this.Equally.TabIndex = 10;
             this.Equally.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Equally.Click += new System.EventHandler(this.Equally_Click);
@@ -491,12 +493,40 @@
             this.one.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.one.Click += new System.EventHandler(this.one_Click);
             // 
+            // Clear
+            // 
+            this.Clear.ActiveBorderThickness = 1;
+            this.Clear.ActiveCornerRadius = 20;
+            this.Clear.ActiveFillColor = System.Drawing.Color.Black;
+            this.Clear.ActiveForecolor = System.Drawing.Color.White;
+            this.Clear.ActiveLineColor = System.Drawing.Color.Black;
+            this.Clear.BackColor = System.Drawing.Color.Transparent;
+            this.Clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Clear.BackgroundImage")));
+            this.Clear.ButtonText = "C";
+            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Clear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.ForeColor = System.Drawing.Color.White;
+            this.Clear.IdleBorderThickness = 1;
+            this.Clear.IdleCornerRadius = 20;
+            this.Clear.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Clear.IdleForecolor = System.Drawing.Color.White;
+            this.Clear.IdleLineColor = System.Drawing.Color.White;
+            this.Clear.Location = new System.Drawing.Point(290, 411);
+            this.Clear.Margin = new System.Windows.Forms.Padding(5);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(85, 86);
+            this.Clear.TabIndex = 16;
+            this.Clear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(385, 511);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.bunifuGradientPanel1.ResumeLayout(false);
@@ -524,6 +554,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 Equally;
         private System.Windows.Forms.Label NumberText;
         private System.Windows.Forms.Panel panel1;
+        private Bunifu.Framework.UI.BunifuThinButton2 Clear;
     }
 }
 
