@@ -16,9 +16,11 @@ namespace CalculatorGraphics
         {
             InitializeComponent();
         }
+
         private string numberone;
         private double sum = 0;
         private string LastOperation = null;
+        private int CheckSign = 0;
 
         private void summ_Click(object sender, EventArgs e)
         {
@@ -36,14 +38,14 @@ namespace CalculatorGraphics
         }
         private void divide_Click(object sender, EventArgs e) // Have bug
         {
-            sum /= Convert.ToInt32(numberone);
+            sum += Convert.ToInt32(numberone);
             numberone = null;
             NumberText.Text += " " + divide.ButtonText + " ";
             LastOperation = "divide";
         }
         private void multiply_Click(object sender, EventArgs e) // Have bug
         {
-            sum *= Convert.ToInt32(numberone);
+            sum += Convert.ToInt32(numberone);
             numberone = null;
             NumberText.Text += " " + multiply.ButtonText + " ";
             LastOperation = "multiply";
@@ -52,12 +54,20 @@ namespace CalculatorGraphics
         {
             if (LastOperation.Equals("sum"))
                 sum += Convert.ToDouble(numberone);
-            if(LastOperation.Equals("minus"))
+            if (LastOperation.Equals("minus"))
                 sum -= Convert.ToDouble(numberone);
+
+
             if (LastOperation.Equals("divide"))
+            {
                 sum /= Convert.ToDouble(numberone);
+                numberone = null;
+            }
             if (LastOperation.Equals("multiply"))
+            {
                 sum *= Convert.ToDouble(numberone);
+                numberone = null;
+            }
 
             NumberText.Text = Convert.ToString(sum);
             numberone = null;
@@ -72,6 +82,7 @@ namespace CalculatorGraphics
             else
                 NumberText.Text += ButtonText;
         }
+
         private void Clear_Click(object sender, EventArgs e)
         {
             NumberText.Text = "0";
@@ -127,6 +138,11 @@ namespace CalculatorGraphics
         {
             numberone += zero.ButtonText;
             CheckNumberTextOnNull(zero.ButtonText);
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.Clear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
             this.NumberText = new System.Windows.Forms.Label();
             this.minus = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -47,7 +48,6 @@
             this.three = new Bunifu.Framework.UI.BunifuThinButton2();
             this.two = new Bunifu.Framework.UI.BunifuThinButton2();
             this.one = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.Clear = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,12 +84,39 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(385, 513);
             this.bunifuGradientPanel1.TabIndex = 1;
             // 
+            // Clear
+            // 
+            this.Clear.ActiveBorderThickness = 1;
+            this.Clear.ActiveCornerRadius = 20;
+            this.Clear.ActiveFillColor = System.Drawing.Color.Black;
+            this.Clear.ActiveForecolor = System.Drawing.Color.White;
+            this.Clear.ActiveLineColor = System.Drawing.Color.Black;
+            this.Clear.BackColor = System.Drawing.Color.Transparent;
+            this.Clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Clear.BackgroundImage")));
+            this.Clear.ButtonText = "C";
+            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Clear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clear.ForeColor = System.Drawing.Color.White;
+            this.Clear.IdleBorderThickness = 1;
+            this.Clear.IdleCornerRadius = 20;
+            this.Clear.IdleFillColor = System.Drawing.Color.Transparent;
+            this.Clear.IdleForecolor = System.Drawing.Color.White;
+            this.Clear.IdleLineColor = System.Drawing.Color.White;
+            this.Clear.Location = new System.Drawing.Point(290, 411);
+            this.Clear.Margin = new System.Windows.Forms.Padding(5);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(85, 86);
+            this.Clear.TabIndex = 16;
+            this.Clear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(-10, 105);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(413, 10);
+            this.panel1.Size = new System.Drawing.Size(403, 10);
             this.panel1.TabIndex = 15;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // NumberText
             // 
@@ -97,7 +124,7 @@
             this.NumberText.BackColor = System.Drawing.Color.Transparent;
             this.NumberText.Font = new System.Drawing.Font("Book Antiqua", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.NumberText.ForeColor = System.Drawing.Color.White;
-            this.NumberText.Location = new System.Drawing.Point(3, 67);
+            this.NumberText.Location = new System.Drawing.Point(3, 64);
             this.NumberText.Name = "NumberText";
             this.NumberText.Size = new System.Drawing.Size(33, 38);
             this.NumberText.TabIndex = 2;
@@ -492,32 +519,6 @@
             this.one.TabIndex = 0;
             this.one.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.one.Click += new System.EventHandler(this.one_Click);
-            // 
-            // Clear
-            // 
-            this.Clear.ActiveBorderThickness = 1;
-            this.Clear.ActiveCornerRadius = 20;
-            this.Clear.ActiveFillColor = System.Drawing.Color.Black;
-            this.Clear.ActiveForecolor = System.Drawing.Color.White;
-            this.Clear.ActiveLineColor = System.Drawing.Color.Black;
-            this.Clear.BackColor = System.Drawing.Color.Transparent;
-            this.Clear.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Clear.BackgroundImage")));
-            this.Clear.ButtonText = "C";
-            this.Clear.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Clear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clear.ForeColor = System.Drawing.Color.White;
-            this.Clear.IdleBorderThickness = 1;
-            this.Clear.IdleCornerRadius = 20;
-            this.Clear.IdleFillColor = System.Drawing.Color.Transparent;
-            this.Clear.IdleForecolor = System.Drawing.Color.White;
-            this.Clear.IdleLineColor = System.Drawing.Color.White;
-            this.Clear.Location = new System.Drawing.Point(290, 411);
-            this.Clear.Margin = new System.Windows.Forms.Padding(5);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(85, 86);
-            this.Clear.TabIndex = 16;
-            this.Clear.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Form1
             // 
